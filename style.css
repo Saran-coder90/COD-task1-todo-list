@@ -27,7 +27,7 @@
     height: 100%;
 }
 
-button{
+.button{
      border-width: 0px;
      width:40px;
      height: 40px;
@@ -39,6 +39,11 @@ button{
 
 button:active{
     transform: translateY(5px);
+}
+
+.task-container{
+    background-color: #ffffff;
+
 }
 
 .add-animations-left{
