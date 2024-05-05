@@ -36,7 +36,7 @@ The transition to digital to-do lists has opened up a plethora of possibilities 
 
   
 
-- JavaScript Framework: Utilize a modern JavaScript framework for building the frontend application.
+- JavaScript Framework: Utilize a modern JavaScript for building the frontend application.
 
 - HTML/CSS: Use HTML5 and CSS3 for structuring and styling the user interface, ensuring compatibility with various web browsers.
 
@@ -54,23 +54,19 @@ The transition to digital to-do lists has opened up a plethora of possibilities 
 
   
 
-<div  class="listcontainer">: Acts as the main container for the to-do list application, wrapping everything in a visually appealing background.
+- Acts as the main container for the to-do list application, wrapping everything in a visually appealing background.
 
   
 
-<div  class="todo-app">: Encloses the to-do list's title, input area, and list itself, providing a centered, stylized container for the app components.
+- Encloses the to-do list's title, input area, and list itself, providing a centered, stylized container for the app components.
+
+
+
+- Contains the text input field and the Enter button. Users can type their task here and add it to the list.
 
   
 
-<h2>To-Do List</h2>: The title for the application.
-
-  
-
-Input Row (<div  class='row'>): Contains the text input field and the Enter button. Users can type their task here and add it to the list.
-
-  
-
-<ul  id="List-container">: The unordered list where tasks will be displayed as list items (<li>).
+ The <p> tag where tasks will be displayed as list items (p).
 
   
 
@@ -92,11 +88,11 @@ Key styling includes:
 
 - Input fields and buttons are styled for a seamless interface, with hover effects for interactivity.
 
-- The .listcontainer and .todo-app are styled to center the content and apply specific background colors and paddings.
+- The .background and .box are styled to center the content and apply specific background colors and paddings.
 
-- Tasks (<li> elements) have distinctive styles, with completed tasks being visually different to provide clear feedback on their status.
+- Tasks have distinctive styles, with completed tasks being visually different to provide clear feedback on their status.
 
-- Tasks (<li> elements) and other components like the input box and buttons have specific styles for appearance, hover effects, and when a task is marked as completed.
+- Tasks  and other components like the input box and buttons have specific styles for appearance, hover effects, and when a task is marked as completed.
 
   
 
@@ -116,11 +112,7 @@ Checks if the input field (inputactivity) is empty. If not, it proceeds; otherwi
 
   
 
-Creates a new list item (<li>) and sets its content to the value entered in the input field.
-
-  
-
-Appends a close button (<span>) to each task for the removal functionality, with a click event listener that hides the task on click.
+Creates a new list item (<p>) and sets its content to the value entered in the input field.
 
   
 
@@ -140,7 +132,7 @@ Utilizes event delegation by adding a click event listener to the list container
 
   
 
-The close button (<span> with '×') added to each task allows users to remove tasks from the list.
+The close button (del with '×') added to each task allows users to remove tasks from the list.
 
   
 
