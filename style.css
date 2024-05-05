@@ -15,13 +15,14 @@
 .head{
     font-weight: 900;
     font-size: 32px;
-    
+
 }
 .input-design{
     border-radius: 10px;
     border-width: 0px;
     padding: 5px;
     outline: none;
+    
 }
 .input-design:hover{
     border-style: solid;
@@ -39,6 +40,7 @@
      background-size: cover;
      background-position: center;
      outline: none;
+     margin-right: 5px;
 }
 .delete-all-button{
     border-radius: 50%;
