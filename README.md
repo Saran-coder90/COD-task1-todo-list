@@ -62,11 +62,11 @@ The transition to digital to-do lists has opened up a plethora of possibilities 
 
 
 
-- Contains the text input field and the Enter button. Users can type their task here and add it to the list.
+- Contains the text input field and the Enter button. Users can type their task here and add it to the div container.
 
   
 
- The <p> tag where tasks will be displayed as list items (p).
+ The <p> tag where tasks will be displayed as paragraph items (p).
 
   
 
@@ -132,19 +132,16 @@ Utilizes event delegation by adding a click event listener to the list container
 
   
 
-The close button (del with '×') added to each task allows users to remove tasks from the list.
+The button (del with 'trash-sybol') added to each task allows users to remove tasks from div container.
 
   
-
-Initially set up in the add function and further facilitated through a click event listener that sets the task's display style to "none", effectively hiding it.
-
   
 
 **USAGE**
 
   
 
-**Adding a Task:** Users enter a task in the input field and click "Enter" to add it to the list.
+**Adding a Task:** Users enter a task in the input field and click '+' button to add it to the div container.
 
   
 
@@ -152,7 +149,11 @@ Initially set up in the add function and further facilitated through a click eve
 
   
 
-**Removing a Task:** Users click the "×" button on a task to remove it from the list.
+**Removing a Task:** Users click the "trash" button on a task to remove it from div container.
+
+
+
+**Removing a All Task:** Users click the "x" button on a task to remove all task from the div container.
 
   
   
