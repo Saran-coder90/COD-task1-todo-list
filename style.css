@@ -2,13 +2,15 @@
 
 .background{
     background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
-    height:100vh;
-    align-items: center;
-}
+    min-height:100vh;
+    
 .box{
     backdrop-filter: blur(10px);
     padding :20px;
     border-radius: 16px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 }
 .head{
     font-weight: 900;
@@ -19,6 +21,7 @@
     border-width: 0px;
     padding: 5px;
     outline: none;
+    min-width: 280px;
 }
 .input-design:hover{
     border-style: solid;
@@ -29,34 +32,65 @@
 
 .button{
      border-width: 0px;
-     width:40px;
-     height: 40px;
+     width:50px;
+     height: 50px;
      border-radius:50%;
      background-image: url("https://img.icons8.com/ios-filled/50/7950F2/plus.png");
      background-size: cover;
      background-position: center;
+     outline: none;
 }
-
+.delete-all-button{
+    border-radius: 50%;
+    width:50px;
+    height: 50px;
+    background-image: url("https://img.icons8.com/fluency/48/delete-sign.png");
+    background-size: cover;
+    background-position: center;
+    border-width: 0px;
+}
 button:active{
     transform: translateY(5px);
 }
 
 .task-container{
-    background-color: #ffffff;
-
+    background-color: #403b3b;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 5px;
+    color: aliceblue;
+    font-size: large;
 }
-
+.para{
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+.count-container{
+    font-weight: bolder;
+}
 .add-animations-left{
     animation-name: leftanimation;
     animation-duration: 1s;
 }
 .add-animation-zoom-out{
     animation-name: zoomanimation;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
 }
 .add-animations-right{
     animation-name: rightanimation;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
+}
+.add-animations-down{
+    animation-name: downanimation;
+    animation-duration: 0.5s;
+}
+
+@keyframes downanimation {
+    100% {transform: translateY(2000%);}
+    0%   {transform: translateY(0%);}
 }
 
 @keyframes zoomanimation{
@@ -68,6 +102,6 @@ button:active{
     0%{transform: translateX(-100%);}
 }
 @keyframes rightanimation{
-    100%{transform : translateX(0%);}
-    0%{transform: translateX(200%);}
+    100%{transform : translateX(100%);}
+    0%{transform: translateX(0%);}
 }
